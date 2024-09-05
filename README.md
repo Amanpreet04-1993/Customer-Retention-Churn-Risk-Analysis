@@ -35,19 +35,18 @@ and number of tickets opened in the categories administrative and technical
 Following inferences can be drawn from the dashboard;
 
 
-Part 1 - ###Demographic###
+**Part 1 - ###Demographic###**
 
 ### [1] Card Created to distribute Agents, Where Customer ID Minus where churn data is yes = 1869 (Customer At risk) 
    
 thus, Customer ID - Churn data (yes) = 1869.
 
-     
-        DAX %       
+   
 ### [A] Percentage Of seniors
-        Percentage Of seniors = DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[SeniorCitizen]), '01 Churn-Dataset'[SeniorCitizen]=1, '01 Churn-Dataset'[Churn]="Yes"), CALCULATE(COUNT('01 Churn-Dataset'[SeniorCitizen]),'01 Churn-Dataset'[Churn]="Yes"),0) 
+        DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[SeniorCitizen]), '01 Churn-Dataset'[SeniorCitizen]=1, '01 Churn-Dataset'[Churn]="Yes"), CALCULATE(COUNT('01 Churn-Dataset'[SeniorCitizen]),'01 Churn-Dataset'[Churn]="Yes"),0) 
     
 ### [B] Partner in Percentage
-        Partner in %Percentage = DIVIDE(CALCULATE(COUNT(churn[Partner]), churn[Partner]="Yes", churn[Churn]= "Yes"), CALCULATE(COUNT(churn[Partner]), churn[Churn]="Yes"),0) 
+        DIVIDE(CALCULATE(COUNT(churn[Partner]), churn[Partner]="Yes", churn[Churn]= "Yes"), CALCULATE(COUNT(churn[Partner]), churn[Churn]="Yes"),0) 
 
 ### [C] Dependents in Percentage
         DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[Dependents]), '01 Churn-Dataset'[Dependents]="Yes"), CALCULATE(COUNT('01 Churn-Dataset'[Dependents]), '01 Churn-Dataset'[Churn]="Yes"),0) 
@@ -82,9 +81,8 @@ Part 3 - ###Services Customer signed Up for ###
 
 7 Power Queries has been added to the dax to created complicated CALCULATive percentage system
 
-![Percentage of Subscription](https://github.com/user-attachments/assets/d55b72f7-3099-4ed7-b6ea-fa5c2912c113)
+Each one has its own uniquie and fundamental importance
 
-Each one has its own uniquie and fundamental importance/
       
 ### [1] Percentage Of Phone Service %
         DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[PhoneService]),'01 Churn-Dataset'[PhoneService]="Yes",'01 Churn-Dataset'[Churn]="Yes"),CALCULATE(COUNT('01 Churn-Dataset'[PhoneService]),'01 Churn-Dataset'[Churn]="Yes"),0) 
