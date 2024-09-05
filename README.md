@@ -63,19 +63,44 @@ New column has been edited, By Transforming data and Giving Conditional column t
 
 Part 2 - ###Payment Method###
 
-### [1] Cluster Bar Chart Created to distribute Payment Method, where Electronic checks (57%) are the highest mode of payments by clients, continued by email check (16%), bank transfer (14%) & Credit Card (12%).
-
-### [2] Donut Cart identifies Amoung paperless billing 74.91% people chose this mode of payment and 25.09% people prefered not to chose paperless billing.
-
-### [3] Stacked Bar Chart Showes hightest mode of subscription is Month-To-Month 88.55%, 8.88% prefer yearly subscription and only 2.57% People chosen Two year subscription.
-
-### [4] Added a card to to show case Average Monthly charge, charged by Phonenow is $ 74.44 where total average amount to a customer is $1531.80
+### [1] Cluster Bar Chart Created to distribute Payment Method, where Electronic checks are the highest mode of payments by clients, countniued by email check , bank transefer & credit  ard
 
 
+### [2] Donut Chart supported to sagregate paperless billing where we have found out 25.09% People do not use paperless billing where in 74.91 people use paperless billing as a payment method.
+
+### [3] Multi row card supported us with total average charges client pays on monthly bases is 74.44 per month with a average total of 1531.80 in total;
+
+
+### [4] Clustered bar Chart played an important to create (Payment method Table), with the help of contracts in Y axis and selecting percent of grand total (COUNT) we've got 3 rows
+Month-to-month - 88.55%
+one Year - 8.88%
+Two Year - 2.57%
 
 
 
+Part 3 - ###Services Customer signed Up for ###
+
+7 Power Queries has been added to the dax to created complicated CALCULATive percentage system
+
+![Percentage of Subscription](https://github.com/user-attachments/assets/d55b72f7-3099-4ed7-b6ea-fa5c2912c113)
+
+Each one has its own uniquie and fundamental importance/
+      
+### [1] Percentage Of Phone Service %
+        DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[PhoneService]),'01 Churn-Dataset'[PhoneService]="Yes",'01 Churn-Dataset'[Churn]="Yes"),CALCULATE(COUNT('01 Churn-Dataset'[PhoneService]),'01 Churn-Dataset'[Churn]="Yes"),0) 
+### [2] Percentage Of Streaming Tv %
+        DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[StreamingTV]),'01 Churn-Dataset'[StreamingTV]="Yes",'01 Churn-Dataset'[Churn]="Yes"),CALCULATE(COUNT('01 Churn-Dataset'[StreamingTV]),'01 Churn-Dataset'[Churn]="Yes"),0)
+### [3] Percentage Of Streaming movies %
+        DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[StreamingMovies]),'01 Churn-Dataset'[StreamingMovies]="Yes",'01 Churn-Dataset'[Churn]="Yes"),CALCULATE(COUNT('01 Churn-Dataset'[StreamingMovies]),'01 Churn-Dataset'[Churn]="Yes"),0
+### [4] Percentage Of DeviceProtection %
+        = DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[DeviceProtection]),'01 Churn-Dataset'[DeviceProtection]="Yes",'01 Churn-Dataset'[Churn]="Yes"),CALCULATE(COUNT('01 Churn-Dataset'[DeviceProtection]),'01 Churn-Dataset'[Churn]="Yes"),0) 
+### [5] Percentage Of online backup %
+        DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[OnlineBackup]),'01 Churn-Dataset'[OnlineBackup]="Yes",'01 Churn-Dataset'[Churn]="Yes"),CALCULATE(COUNT('01 Churn-Dataset'[OnlineBackup]),'01 Churn-Dataset'[Churn]="Yes"),0)
+### [6] Percentage Of security %
+        DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[OnlineSecurity]),'01 Churn-Dataset'[OnlineSecurity]="Yes",'01 Churn-Dataset'[Churn]="Yes"),CALCULATE(COUNT('01 Churn-Dataset'[OnlineSecurity]),'01 Churn-Dataset'[Churn]="Yes"),0)
+### [7] Percentage Of Tech support %
+        DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[TechSupport]),'01 Churn-Dataset'[TechSupport]="Yes",'01 Churn-Dataset'[Churn]="Yes"),CALCULATE(COUNT('01 Churn-Dataset'[TechSupport]),'01 Churn-Dataset'[Churn]="Yes"),0)
 
 
-
+        
         
