@@ -2,7 +2,7 @@
 
 ### Dashboard Link : # Customer Retention (PhoneNow)
 
-### Dashboard Link : https://app.powerbi.com/groups/me/reports/11e1a7fa-014f-4479-bc96-486565cc57f8/c63b33a1b956ed3a9ee7?experience=power-bi
+### Dashboard Link : https://app.powerbi.com/groups/me/reports/11e1a7fa-014f-4479-bc96-486565cc57f8/8effac9d9d3a47ad6a3e?experience=power-bi
 
 ## Problem Statement -
 A few weeks after presenting your dashboard to the management, the Retention Manager from the telecom reaches out to you directly.
@@ -68,7 +68,7 @@ New column has been edited, By Transforming data and Giving Conditional column t
 [1] Cluster Bar Chart Created to distribute Payment Method, where Electronic checks are the highest mode of payments by clients, countniued by email check , bank transefer & credit  ard
 
 
-[2] Donut Chart supported to sagregate paperless billing where we have found out 25.09% People do not use paperless billing where in 74.91 people use paperless billing as a payment method.
+[2] Donut Chart supported to segregate paperless billing where we have found out 25.09% People do not use paperless billing where in 74.91 people use paperless billing as a payment method.
 
 [3] Multi row card supported us with total average charges client pays on monthly bases is 74.44 per month with a average total of 1531.80 in total;
 
@@ -83,7 +83,7 @@ Month-to-month - 88.55%
 
 **Part 3 - ###Services Customer signed Up for ###**
 
-7 Power Queries has been added to the dax to created complicated CALCULATive percentage system
+7 Power Queries has been added to the DAX to created complicated Calculative percentage system
 ![Singup Screenshot](https://github.com/user-attachments/assets/62eb4ffa-1804-49c9-a8ac-798da7e127c4)
 
 Each one has its own uniquie and fundamental importance
@@ -127,11 +127,11 @@ Following inferences can be drawn from the dashboard;
 
   
   
-  ### Few slicers has been added to the churn coloum (left Row) in the filter widgets to inhance the filter reaches.
+  ### Few slicers has been added to the churn column (left Row) in the filter widgets to enhance the filter reaches.
 
-  [Slicer] Risk of churn With Yes/No Posibilities
+  [Slicer] Risk of churn With Yes/No Possibilities
 
-  [Slicer] Internet service helped adding coloums like DSL, Fiber optics, No
+  [Slicer] Internet service helped adding columns like DSL, Fiber optics, No
 
   [Slicer] Months subscribed, between 0-72 and by adding a Slider to adjust dates and report made things easier
 
@@ -139,7 +139,7 @@ Following inferences can be drawn from the dashboard;
 
 ***************************************************
 
-Churn by type of internet (Clustered coloumn Chart)
+Churn by type of internet (Clustered column Chart)
 
        X Axis  - internet Service + Y Axis Churn rate %
 
@@ -151,11 +151,11 @@ Sum of monthly charges (Pie Chart)
 
        Legend(internet Service) + Values (Sum Of monthly charge)   
 
-Type of Contract (Line and Cluster coloumn chart)
+Type of Contract (Line and Cluster column chart)
 
        X Axis(Contracts) + Column Y Axis (Churn rate %) + Line Y - Axis(Count of customer)
 
-Year of Contract (Line and Cluster coloumn chart)
+Year of Contract (Line and Cluster column chart)
 
        X Axis(Tenure) + Column Y Axis (Churn rate %) + Line Y - Axis(Sum of monthly charge)
  
