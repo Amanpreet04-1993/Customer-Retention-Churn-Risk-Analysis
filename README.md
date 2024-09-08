@@ -125,17 +125,16 @@ Following inferences can be drawn from the dashboard;
         CALCULATE(COUNTA('01 Churn-Dataset'[Churn]), '01 Churn-Dataset'[Churn] IN { "Yes" })
 ### [Multi Row Card] created by adding Admin Tickets and tech tickets from the dataset shared us the total Number of tickets.
 
-  
-  
-  ### Few slicers has been added to the churn column (left Row) in the filter widgets to enhance the filter reaches.
+  ![KPI Analysis](https://github.com/user-attachments/assets/4e7d2477-dc81-494e-921a-f6c21d8d5d91)
 
-  [Slicer] Risk of churn With Yes/No Possibilities
+  ### Few Slicers Added to the Churn Column (Left Row) in the Filter Widgets to Enhance Filtering Capabilities
+[Slicer] Risk of Churn: This slicer provides Yes/No options to filter data based on whether customers are identified as at risk of churn. It allows users to easily view and analyze data related to high-risk and low-risk customers.
 
-  [Slicer] Internet service helped adding columns like DSL, Fiber optics, No
+[Slicer] Internet Service: This slicer includes options such as DSL, Fiber Optics, and No Internet Service. It helps in filtering the data by the type of internet service, making it easier to compare churn rates and other metrics across different types of internet services.
 
-  [Slicer] Months subscribed, between 0-72 and by adding a Slider to adjust dates and report made things easier
+[Slicer] Months Subscribed: This slicer features a range from 0 to 72 months, with a slider for adjusting the date range. It simplifies filtering customers based on their subscription duration, providing flexibility to view data for specific periods.
 
-[Slicer] Contract Type helped us to rectify people who lover to subscribe monthly, yearly and perfer two years contracts
+[Slicer] Contract Type: This slicer includes options for Monthly, Yearly, and Two-Year contracts. It assists in analyzing how different contract types affect customer behavior and churn rates, and helps to identify preferences for contract durations.
 
 ***************************************************
 
