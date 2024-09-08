@@ -1,6 +1,6 @@
 # Customer Retention (PhoneNow)
 
-### Dashboard Link : # Customer Retention (PhoneNow)
+### Customer Retention (PhoneNow)
 
 ### Dashboard Link : https://app.powerbi.com/groups/me/reports/11e1a7fa-014f-4479-bc96-486565cc57f8/8effac9d9d3a47ad6a3e?experience=power-bi
 
@@ -33,16 +33,14 @@ and number of tickets opened in the categories administrative and technical
 ## CHURN ANALYSIS 
 ![Churn dashboard](https://github.com/user-attachments/assets/24eea047-0b79-4887-b066-5bca3f2da673)
 
-# single page report was created on Power BI Desktop & it was then published to Power BI Service.
+# Single page report was created on Power BI Desktop & it was then published to Power BI Service.
 
 Following inferences can be drawn from the dashboard;
 
 
 **Part 1 - Demographic**
 
-### [1] Card Created to distribute Agents, Where Customer ID Minus where churn data is yes = 1869 (Customer At risk) 
-   
-thus, Customer ID - Churn data (yes) = 1869.
+###[1] Card Created for Distributing Agents: The number of customers identified as "at risk" (i.e., those with churn data marked as "yes") is 1,869.
 
    
 ### [A] Percentage Of seniors
@@ -54,30 +52,30 @@ thus, Customer ID - Churn data (yes) = 1869.
 ### [C] Dependents in Percentage
         DIVIDE(CALCULATE(COUNT('01 Churn-Dataset'[Dependents]), '01 Churn-Dataset'[Dependents]="Yes"), CALCULATE(COUNT('01 Churn-Dataset'[Dependents]), '01 Churn-Dataset'[Churn]="Yes"),0) 
 
-  
-### [2] Subscription time
-New column has been edited, By Transforming data and Giving Conditional column to the Visualization 
+![KPI Analysis](https://github.com/user-attachments/assets/179597db-1445-48b5-99ac-edbf6f68c91f)
 
+### [2] Subscription time
+The new column has been updated by transforming the data and applying a conditional column for improved visualization.
  
 ![Subscription time](https://github.com/user-attachments/assets/8df0d709-1c42-4479-8fc3-8c60e25f1df5)
 
-
-
 **Part 2 - Payment Method**
 
-[1] Cluster Bar Chart Created to distribute Payment Method, where Electronic checks are the highest mode of payments by clients, countniued by email check , bank transefer & credit  ard
+[1] Cluster Bar Chart
+A clustered bar chart has been created to display payment methods, with electronic checks being the most common payment method among clients, followed by email checks, bank transfers, and credit cards.
 
+[2] Donut Chart
+A donut chart has been used to analyze paperless billing. It shows that 25.09% of people do not use paperless billing, while 74.91% of people use it as a payment method.
 
-[2] Donut Chart supported to segregate paperless billing where we have found out 25.09% People do not use paperless billing where in 74.91 people use paperless billing as a payment method.
+[3] Multi-Row Card
+A multi-row card indicates that the average monthly charges paid by clients are $74.44, with a total average charge of $1,531.80.
 
-[3] Multi row card supported us with total average charges client pays on monthly bases is 74.44 per month with a average total of 1531.80 in total;
+Additional Information
+The clustered bar chart was instrumental in creating the payment method table. By plotting the number of contracts on the Y-axis and selecting the percentage of the grand total (count), we obtained the following distribution:
 
-
-Clustered bar Chart played an important to create (Payment method Table), with the help of contracts in Y axis and selecting percent of grand total (COUNT) we've got 3 rows
-
-Month-to-month - 88.55%
-/ One Year - 8.88%
-/ Two Year - 2.57%
+Month-to-month: 88.55%
+One year: 8.88%
+Two years: 2.57%
 
 
 
@@ -125,7 +123,7 @@ Following inferences can be drawn from the dashboard;
         CALCULATE(COUNTA('01 Churn-Dataset'[Churn]), '01 Churn-Dataset'[Churn] IN { "Yes" })
 ### [Multi Row Card] created by adding Admin Tickets and tech tickets from the dataset shared us the total Number of tickets.
 
-  ![KPI Analysis](https://github.com/user-attachments/assets/4e7d2477-dc81-494e-921a-f6c21d8d5d91)
+  ![KPI 2](https://github.com/user-attachments/assets/84b91072-20b8-4a49-a8f0-d65dd7fa81d0)
 
   ### Few Slicers Added to the Churn Column (Left Row) in the Filter Widgets to Enhance Filtering Capabilities
 [Slicer] Risk of Churn: This slicer provides Yes/No options to filter data based on whether customers are identified as at risk of churn. It allows users to easily view and analyze data related to high-risk and low-risk customers.
