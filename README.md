@@ -57,7 +57,8 @@ Following inferences can be drawn from the dashboard;
 ### [2] Subscription time
 The new column has been updated by transforming the data and applying a conditional column for improved visualization.
  
-![Subscription time](https://github.com/user-attachments/assets/8df0d709-1c42-4479-8fc3-8c60e25f1df5)
+![Subscription time](https://github.com/user-attachments/assets/8df0d709-1c42-4479-8fc3-8c60e25f1df5) ![Coloum Conditioning ](https://github.com/user-attachments/assets/6d773aa3-924d-4b35-b4e2-80a35460df1b)
+
 
 **Part 2 - Payment Method**
 
