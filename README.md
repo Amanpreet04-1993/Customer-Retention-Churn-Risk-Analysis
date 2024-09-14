@@ -1,4 +1,5 @@
 # Customer Retention (PhoneNow)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 
 ### Customer Retention (PhoneNow)
 
